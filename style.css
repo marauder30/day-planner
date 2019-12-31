@@ -79,3 +79,7 @@ body {
   .btn {
     float: right;
   }
+
+  .input-group {
+    width: 95.5%;
+  }

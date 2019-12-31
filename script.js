@@ -30,8 +30,6 @@ function setTimer() {
         var dateTime = date+' '+time;
         todaysDate.innerHTML = dateTime;
         
-        
-        
     }, 1000);
 }
 
