@@ -10,6 +10,25 @@ var time4 = document.getElementById("4pm");
 var time5 = document.getElementById("5pm");
 
 
+// Retrieve current date and time
+setTimer();	
+
+function setTimer() {
+    
+    setInterval(function() {
+        
+        var today = new Date();
+        var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        var dateTime = date+' '+time;
+        console.log(dateTime);
+        
+        
+        
+    }, 1000);
+}
+
+
 
 
 
