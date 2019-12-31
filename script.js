@@ -8,10 +8,17 @@ var time2 = document.getElementById("2pm");
 var time3 = document.getElementById("3pm");
 var time4 = document.getElementById("4pm");
 var time5 = document.getElementById("5pm");
+var todaysDate = document.getElementById("currentDay");
 
 
 // Retrieve current date and time
 setTimer();	
+
+
+
+
+// function a
+
 
 function setTimer() {
     
@@ -19,20 +26,14 @@ function setTimer() {
         
         var today = new Date();
         var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        var time = today.getHours() + ":" + today.getMinutes();
         var dateTime = date+' '+time;
-        console.log(dateTime);
+        todaysDate.innerHTML = dateTime;
         
         
         
     }, 1000);
 }
-
-
-
-
-
-// function a
 
 //function b
 
