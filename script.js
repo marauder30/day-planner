@@ -1,18 +1,36 @@
 // html references
-var time9 = document.getElementById("9am");
-var time10 = document.getElementById("10am");
-var time11 = document.getElementById("11am");
-var time12 = document.getElementById("12pm");
-var time1 = document.getElementById("1pm");
-var time2 = document.getElementById("2pm");
-var time3 = document.getElementById("3pm");
-var time4 = document.getElementById("4pm");
-var time5 = document.getElementById("5pm");
-var todaysDate = document.getElementById("currentDay");
+// var time9 = document.getElementById("9am");
+var time9 = $(`#9am`)[0];
+var time10 = $(`#10am`)[0];
+var time11 = $(`#11am`)[0];
+var time12 = $(`#12pm`)[0];
+var time1 = $(`#1pm`)[0];
+var time2 = $(`#2pm`)[0];
+var time3 = $(`#3pm`)[0];
+var time4 = $(`#4pm`)[0];
+var time5 = $(`#5pm`)[0];
 
+
+var todayDate = $(`#currentDay`)[0];
+
+
+console.log(time9);
+
+changeStatus();
 
 // Retrieve current date and time
 setTimer();	
+console.log(time10);
+
+
+
+
+function changeStatus() {
+    time9.setAttribute("data-state", "present");
+    console.log(time9);
+    changeCurrent();
+    changePast();
+}
 
 
 
@@ -26,16 +44,28 @@ function setTimer() {
         
         var today = new Date();
         var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-        var time = today.getHours() + ":" + today.getMinutes();
-        var dateTime = date+' '+time;
-        todaysDate.innerHTML = dateTime;
-        
+        var time = today.getHours();
+        todayDate.innerHTML = date;
     }, 1000);
 }
 
-//function b
 
-//function c
+
+// set all cards to green/future initially
+
+// function to set current card to bg-danger etc
+
+function changeCurrent() {
+    time10.setAttribute("class", "card text-white bg-danger mb-3");
+}
+
+// function to set past cards to secondary
+
+function changePast() {
+    time9.setAttribute("class", "card border-secondary mb-3");
+}
+
+
 
 // use jquery and bootstrap to construct a simple single day planner
 // planner should use normal business hours, 9 -5
