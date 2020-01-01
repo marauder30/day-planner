@@ -62,7 +62,34 @@ function setTimer() {
 // function to set past cards to secondary
 
 function changePast() {
-    time9.setAttribute("class", "card border-secondary mb-3");
+
+    if (time >= 10) {
+        time9.setAttribute("class", "card border-secondary mb-3");
+    }
+    if (time >= 11) {
+        time10.setAttribute("class", "card border-secondary mb-3");
+    }
+    if (time >= 12) {
+        time11.setAttribute("class", "card border-secondary mb-3");
+    }
+    if (time >= 13) {
+        time12.setAttribute("class", "card border-secondary mb-3");
+    }
+    if (time >= 14) {
+        time13.setAttribute("class", "card border-secondary mb-3");
+    }
+    if (time >= 15) {
+        time14.setAttribute("class", "card border-secondary mb-3");
+    }
+    if (time >= 16) {
+        time15.setAttribute("class", "card border-secondary mb-3");
+    }
+    if (time >= 17) {
+        time16.setAttribute("class", "card border-secondary mb-3");
+    }
+    if (time >= 18) {
+        time17.setAttribute("class", "card border-secondary mb-3");
+    }
 }
 
 
