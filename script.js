@@ -19,23 +19,22 @@ var text15 = $(`#text15`)[0];
 var text16 = $(`#text16`)[0];
 var text17 = $(`#text17`)[0];
 
+var taskStorage = {};
+
 var today = new Date();
 var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
 var time = today.getHours();
 var dateTime = date + '  ' + time;
-console.log(dateTime);
 
 
 var todayDate = $(`#currentDay`)[0];
 
 
-console.log(time9);
 
 changeStatus();
 
 // Retrieve current date and time
 setTimer();	
-console.log(time10);
 
 // function to change data attribute, perhaps redundant
 
@@ -105,7 +104,7 @@ function changePast() {
 
 function changeCurrent() {
 
-    console.log(time);
+
     
     if (time === 9) {
         time9.setAttribute("class", "card text-white bg-danger mb-3");
@@ -139,16 +138,40 @@ function changeCurrent() {
 }
 
 
-
 // save input to localStorage
 
 document.addEventListener("click", function(event) {
     var element = event.target;
-
-    if(element.matches("button") === true) {
+    
+    if (element.matches("#button9") === true) {
         console.log("success!");
-        console.log(element.parentElement.parentElement);
-        localStorage.setItem()
     }
+    if (element.matches("#button10") === true) {
+        console.log("success!");
+        console.log($(`#text10`)[0].value);
+    }
+    if (element.matches("#button11") === true) {
+        console.log("success!");
+    }
+    if (element.matches("#button12") === true) {
+        console.log("success!");
+    }
+    if (element.matches("#button13") === true) {
+        console.log("success!");
+    }
+    if (element.matches("#button14") === true) {
+        console.log("success!");
+    }
+    if (element.matches("#button15") === true) {
+        console.log("success!");
+    }
+    if (element.matches("#button16") === true) {
+        console.log("success!");
+    }
+    if (element.matches("#button17") === true) {
+        console.log("success!");
+    }
+    
 })
 
+// var taskStorage = {};
