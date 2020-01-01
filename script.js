@@ -144,32 +144,31 @@ document.addEventListener("click", function(event) {
     var element = event.target;
     
     if (element.matches("#button9") === true) {
-        console.log("success!");
+        console.log($(`#text9`)[0].value);
     }
     if (element.matches("#button10") === true) {
-        console.log("success!");
         console.log($(`#text10`)[0].value);
     }
     if (element.matches("#button11") === true) {
-        console.log("success!");
+        console.log($(`#text11`)[0].value);
     }
     if (element.matches("#button12") === true) {
-        console.log("success!");
+        console.log($(`#text12`)[0].value);
     }
     if (element.matches("#button13") === true) {
-        console.log("success!");
+        console.log($(`#text13`)[0].value);
     }
     if (element.matches("#button14") === true) {
-        console.log("success!");
+        console.log($(`#text14`)[0].value);
     }
     if (element.matches("#button15") === true) {
-        console.log("success!");
+        console.log($(`#text15`)[0].value);
     }
     if (element.matches("#button16") === true) {
-        console.log("success!");
+        console.log($(`#text16`)[0].value);
     }
     if (element.matches("#button17") === true) {
-        console.log("success!");
+        console.log($(`#text17`)[0].value);
     }
     
 })
