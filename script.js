@@ -28,6 +28,7 @@ var dateTime = date + '  ' + time;
 
 var todayDate = $(`#currentDay`)[0];
 
+init();
 
 
 changeStatus();
@@ -44,9 +45,21 @@ function changeStatus() {
 
 }
 
+// initialize function to grab values from localStorage and print on page
 
+function init() {
 
+    text9.value = localStorage.getItem("value9");
+    text10.value = localStorage.getItem("value10");
+    text11.value = localStorage.getItem("value11");
+    text12.value = localStorage.getItem("value12");
+    text13.value = localStorage.getItem("value13");
+    text14.value = localStorage.getItem("value14");
+    text15.value = localStorage.getItem("value15");
+    text16.value = localStorage.getItem("value16");
+    text17.value = localStorage.getItem("value17");
 
+}
 // function to refresh time and date, print date to page
 
 
@@ -151,35 +164,36 @@ document.addEventListener("click", function(event) {
     var value15 = $(`#text15`)[0].value;
     var value16 = $(`#text16`)[0].value;
     var value17 = $(`#text17`)[0].value;
+    
 
     
     if (element.matches("#button9") === true) {
-        console.log(value9);
-
+        localStorage.setItem("value9", value9);
     }
     if (element.matches("#button10") === true) {
-        console.log($(`#text10`)[0].value);
+        localStorage.setItem("value10", value10);
     }
     if (element.matches("#button11") === true) {
-        console.log($(`#text11`)[0].value);
+        localStorage.setItem("value11", value11);
     }
     if (element.matches("#button12") === true) {
-        console.log($(`#text12`)[0].value);
+        localStorage.setItem("value12", value12);
     }
     if (element.matches("#button13") === true) {
-        console.log($(`#text13`)[0].value);
+        localStorage.setItem("value13", value13);
     }
     if (element.matches("#button14") === true) {
-        console.log($(`#text14`)[0].value);
+        localStorage.setItem("value14", value14);
     }
     if (element.matches("#button15") === true) {
-        console.log($(`#text15`)[0].value);
+        localStorage.setItem("value15", value15);
     }
     if (element.matches("#button16") === true) {
-        console.log($(`#text16`)[0].value);
+        localStorage.setItem("value16", value16);
     }
     if (element.matches("#button17") === true) {
-        console.log($(`#text17`)[0].value);
+        localStorage.setItem("value17", value17);
+        console.log(value17);
     }
     
 })
