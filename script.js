@@ -19,7 +19,6 @@ var text15 = $(`#text15`)[0];
 var text16 = $(`#text16`)[0];
 var text17 = $(`#text17`)[0];
 
-var taskStorage = {};
 
 var today = new Date();
 var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
@@ -142,9 +141,21 @@ function changeCurrent() {
 
 document.addEventListener("click", function(event) {
     var element = event.target;
+
+    var value9 = $(`#text9`)[0].value;
+    var value10 = $(`#text10`)[0].value;
+    var value11 = $(`#text11`)[0].value;
+    var value12 = $(`#text12`)[0].value;
+    var value13 = $(`#text13`)[0].value;
+    var value14 = $(`#text14`)[0].value;
+    var value15 = $(`#text15`)[0].value;
+    var value16 = $(`#text16`)[0].value;
+    var value17 = $(`#text17`)[0].value;
+
     
     if (element.matches("#button9") === true) {
-        console.log($(`#text9`)[0].value);
+        console.log(value9);
+
     }
     if (element.matches("#button10") === true) {
         console.log($(`#text10`)[0].value);
