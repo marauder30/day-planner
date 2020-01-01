@@ -33,8 +33,8 @@ console.log(time10);
 
 function changeStatus() {
     time9.setAttribute("data-state", "present");
-    changeCurrent();
-    changePast();
+
+
 }
 
 
@@ -52,6 +52,8 @@ function setTimer() {
         var time = today.getHours();
         console.log(time);
         todayDate.innerHTML = date;
+        changeCurrent();
+        changePast();
     }, 1000);
 }
 
