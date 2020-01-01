@@ -9,6 +9,15 @@ var time14 = $(`#2pm`)[0];
 var time15 = $(`#3pm`)[0];
 var time16 = $(`#4pm`)[0];
 var time17 = $(`#5pm`)[0];
+var text9 = $(`#text9`)[0];
+var text10 = $(`#text10`)[0];
+var text11 = $(`#text11`)[0];
+var text12 = $(`#text12`)[0];
+var text13 = $(`#text13`)[0];
+var text14 = $(`#text14`)[0];
+var text15 = $(`#text15`)[0];
+var text16 = $(`#text16`)[0];
+var text17 = $(`#text17`)[0];
 
 var today = new Date();
 var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
@@ -50,7 +59,6 @@ function setTimer() {
         var today = new Date();
         var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
         var time = today.getHours();
-        console.log(time);
         todayDate.innerHTML = date;
         changeCurrent();
         changePast();
@@ -134,5 +142,13 @@ function changeCurrent() {
 
 // save input to localStorage
 
+document.addEventListener("click", function(event) {
+    var element = event.target;
 
+    if(element.matches("button") === true) {
+        console.log("success!");
+        console.log(element.parentElement.parentElement);
+        localStorage.setItem()
+    }
+})
 
