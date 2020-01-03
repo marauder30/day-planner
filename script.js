@@ -193,7 +193,6 @@ document.addEventListener("click", function(event) {
     }
     if (element.matches("#button17") === true) {
         localStorage.setItem("value17", value17);
-        console.log(value17);
     }
     
 })
