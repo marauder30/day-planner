@@ -9,6 +9,8 @@ This application functions as a basic day planner. The objective is to display a
 
 ![](assets/dayplanner4.png)
 
+![](assets/dayplanner3.png)
+
 ![](assets/dayplanner5.png)
 
 ## Technology
